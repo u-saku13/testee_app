@@ -3,5 +3,6 @@ class OrdersController < ApplicationController
   end
 
   def show
+    @order = Order.find_by(:title => params[:title])
   end
 end

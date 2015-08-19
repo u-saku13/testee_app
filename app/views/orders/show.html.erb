@@ -1,2 +1,6 @@
-<h1>Orders#show</h1>
-<p>Find me in app/views/orders/show.html.erb</p>
+﻿<h1><%= @order[:title] %></h1>
+<p><%= @order[:content] %></p>
+<ul>
+  <li>報酬 : <%= @order[:award] %></li>
+  <li>投稿者 : <%= @order[:owner_id] %></li>
+</ul>

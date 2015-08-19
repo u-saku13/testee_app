@@ -1,11 +1,12 @@
 class CreateOrders < ActiveRecord::Migration
   def change
     create_table :orders do |t|
-      t.string :user_id
+      t.integer :user_id
+      t.string :title
       t.text :content
-      t.string :owner
-      t.int :status
-      t.string :reward
+      t.string :owner_id
+      t.string :award
+      t.integer :status
 
       t.timestamps null: false
     end
