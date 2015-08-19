@@ -1,8 +1,9 @@
 class OrdersController < ApplicationController
   def index
+    @orders = Order.all
   end
 
   def show
-    @order = Order.find_by(:title => params[:title])
+    @orders = Order.find_by(:title => params[:title])
   end
 end
