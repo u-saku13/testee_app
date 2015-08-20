@@ -1,4 +1,4 @@
-Order.create(:user_id => 0, :title =>"help", :content => "teach program", :owner_id => 0, :award =>"1000yen", :status => 0)
+Order.create(:id => 0, :user_id => 0, :title =>"help", :content => "teach program", :owner_id => 0, :award =>"1000yen", :status => 0)
 
 #@user = User.new
 #@user.name = "Yusaku Noriyuki"

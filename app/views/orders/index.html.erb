@@ -1,6 +1,16 @@
-<p>index</p>
+<h1>index</h1>
+<table>
+  <tr>
+   <th>Title</th>
+   <th>u_id</th>
+   <th colspan="1"></th>
+  </tr>
 <% @orders.each do |order| %>
-    <h1><%= order.title %></h1>
-    <p><%= order.user_id %></p>
+  <tr>
+    <td><%= order.title %></td>
+    <td><%= order.user_id %></td>
+    <td><%= link_to "Show", order_path(order) %></td>
+  </tr>
 <% end %>
+</table>
 
